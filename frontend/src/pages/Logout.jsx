@@ -13,7 +13,7 @@ const Logout = () => {
 
     // TODO: Connect to backend logout API & clear auth tokens/state
     //api goes here--->
-    axios.get('http://localhost:3000/api/auth/logout',{withCredentials:true})
+    axios.get('https://spotify-project-7nhp.onrender.com/api/auth/logout',{withCredentials:true})
     .then(()=>{
       setIsLoggingOut(false);
       navigate('/login');

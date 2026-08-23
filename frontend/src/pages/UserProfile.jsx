@@ -52,7 +52,7 @@ const UserProfile = () => {
 
       setloading(true);
 
-      await axios.get(`http://localhost:3000/api/user/user/${id}`,{withCredentials:true})
+      await axios.get(`https://spotify-project-7nhp.onrender.com/api/user/user/${id}`,{withCredentials:true})
       .then((res)=>{
         console.log(res.data)
         setUserData({

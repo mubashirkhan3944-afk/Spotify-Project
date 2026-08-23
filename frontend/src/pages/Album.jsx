@@ -27,7 +27,7 @@ const Album = () => {
     async function fetchAlbumDetails() {
       setLoading(true)
       try {
-        const res = await axios.get(`http://localhost:3000/api/album/album/${id}`, {
+        const res = await axios.get(`https://spotify-project-7nhp.onrender.com/api/album/album/${id}`, {
           withCredentials: true,
         })
         if (isMounted && res.data && res.data.album) {

@@ -53,7 +53,7 @@ const Login = () => {
 
 
     //API call here - TO-DO
-    axios.post('http://localhost:3000/api/auth/login',{username:formData.username,email:formData.email,password:formData.password},{withCredentials:true})
+    axios.post('https://spotify-project-7nhp.onrender.com/api/auth/login',{username:formData.username,email:formData.email,password:formData.password},{withCredentials:true})
     .then((res)=>{
       setIsLoading(false);
       navigate('/');

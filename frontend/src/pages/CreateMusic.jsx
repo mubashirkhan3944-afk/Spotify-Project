@@ -182,7 +182,7 @@ const CreateMusic = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:3000/api/music/create-music', formData, {
+      const res = await axios.post('https://spotify-project-7nhp.onrender.com/api/music/create-music', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
         withCredentials: true,
       })

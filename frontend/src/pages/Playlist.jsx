@@ -26,7 +26,7 @@ const Playlist = () => {
     async function fetchPlaylistDetails() {
       setLoading(true)
       try {
-        const res = await axios.get(`http://localhost:3000/api/playlist/playlist/${id}`, {
+        const res = await axios.get(`https://spotify-project-7nhp.onrender.com/api/playlist/playlist/${id}`, {
           withCredentials: true,
         })
         if (isMounted && res.data && res.data.playList) {

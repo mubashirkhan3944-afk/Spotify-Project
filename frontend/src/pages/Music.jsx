@@ -64,7 +64,7 @@ const Music = () => {
     async function fetchTrack() {
       setLoading(true)
       try {
-        const res = await axios.get(`http://localhost:3000/api/music/${id}`, {
+        const res = await axios.get(`https://spotify-project-7nhp.onrender.com/api/music/${id}`, {
           withCredentials: true,
         })
         if (isMounted && res.data && res.data.music) {
@@ -83,7 +83,7 @@ const Music = () => {
 
       // Fetch related tracks list
       try {
-        const resAll = await axios.get('http://localhost:3000/api/music/', {
+        const resAll = await axios.get('https://spotify-project-7nhp.onrender.com/api/music/', {
           withCredentials: true,
         })
         if (isMounted && resAll.data && resAll.data.musics) {

@@ -82,7 +82,7 @@ const Register = () => {
     setIsLoading(true)
 
     // API call here - TO-DO
-    await axios.post('http://localhost:3000/api/auth/register',formData,{withCredentials:true,headers:{
+    await axios.post('https://spotify-project-7nhp.onrender.com/api/auth/register',formData,{withCredentials:true,headers:{
       'Content-Type':'multipart/form-data'
     }})
     .then((res)=>{

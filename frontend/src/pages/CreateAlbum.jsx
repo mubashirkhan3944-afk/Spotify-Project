@@ -40,7 +40,7 @@ const CreateAlbum = () => {
     async function fetchUserMusics() {
       setLoading(true)
       try {
-        const res = await axios.get('http://localhost:3000/api/user/', {
+        const res = await axios.get('https://spotify-project-7nhp.onrender.com/api/user/', {
           withCredentials: true,
         })
         if (isMounted) {
@@ -106,7 +106,7 @@ const CreateAlbum = () => {
     setIsSubmitting(true)
     try {
       const res = await axios.post(
-        'http://localhost:3000/api/album/create-album',
+        'https://spotify-project-7nhp.onrender.com/api/album/create-album',
         {
           title: title.trim(),
           musics: selectedMusicIds,

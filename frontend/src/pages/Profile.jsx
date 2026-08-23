@@ -40,9 +40,9 @@ const Profile = () => {
     if (!deleteModal) return
     const { type, id } = deleteModal
     const endpoints = {
-      music: `http://localhost:3000/api/music/delete/${id}`,
-      playlist: `http://localhost:3000/api/playlist/delete/${id}`,
-      album: `http://localhost:3000/api/album/delete/${id}`,
+      music: `https://spotify-project-7nhp.onrender.com/api/music/delete/${id}`,
+      playlist: `https://spotify-project-7nhp.onrender.com/api/playlist/delete/${id}`,
+      album: `https://spotify-project-7nhp.onrender.com/api/album/delete/${id}`,
     }
     try {
       await axios.delete(endpoints[type], { withCredentials: true })
@@ -81,7 +81,7 @@ const Profile = () => {
 
       setloading(true);
 
-      await axios.get('http://localhost:3000/api/user/',{withCredentials:true})
+      await axios.get('https://spotify-project-7nhp.onrender.com/api/user/',{withCredentials:true})
       .then((res)=>{
 
         setUserData({

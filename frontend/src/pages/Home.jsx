@@ -56,7 +56,7 @@ const Home = () => {
     async function getData(){
       setloading(true);
 
-      await axios.get('http://localhost:3000/api/user/artist',{withCredentials:true})
+      await axios.get('https://spotify-project-7nhp.onrender.com/api/user/artist',{withCredentials:true})
       .then((res)=>{
         setartist(res.data.artists);
         setartistMusic(res.data.musics);
@@ -65,7 +65,7 @@ const Home = () => {
         console.log(err)
       })
 
-      await axios.get('http://localhost:3000/api/music/',{withCredentials:true})
+      await axios.get('https://spotify-project-7nhp.onrender.com/api/music/',{withCredentials:true})
       .then((res)=>{
         setMusic(res.data.musics);
       })
@@ -73,7 +73,7 @@ const Home = () => {
         console.log(err)
       })
 
-      await axios.get('http://localhost:3000/api/album/album',{withCredentials:true})
+      await axios.get('https://spotify-project-7nhp.onrender.com/api/album/album',{withCredentials:true})
       .then((res)=>{
         setalbum(res.data.albums);
       })
