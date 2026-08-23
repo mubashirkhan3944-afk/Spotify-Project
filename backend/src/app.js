@@ -11,7 +11,7 @@ const cors = require('cors')
 
 
 app.use(cors({
-    origin:'http://localhost:5173',
+    origin:'https://spotify-project-wuy3.vercel.app/',
     credentials:true
 }))
 app.use(express.static('public'));
