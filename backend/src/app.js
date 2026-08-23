@@ -14,6 +14,7 @@ app.use(cors({
     origin:'http://localhost:5173',
     credentials:true
 }))
+app.use(express.static('public'));
 app.use(cookieParser());
 app.use(express.json());
 
@@ -23,6 +24,7 @@ app.use('/api/music',musicRoutes);
 app.use('/api/album',albumRoutes);
 app.use('/api/playlist',playListRoutes);
 app.use('/api/user',userRoutes);
+
 
 
 module.exports = app;
