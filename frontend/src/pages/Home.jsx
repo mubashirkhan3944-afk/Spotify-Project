@@ -41,7 +41,7 @@ const Home = () => {
     async function checkAuth(){
       setloading(true);
 
-      await axios.get('http://localhost:3000/api/auth/me',{withCredentials:true})
+      await axios.get('https://spotify-project-7nhp.onrender.com/api/auth/me',{withCredentials:true})
       .then((res)=>{
         settoken(true);
       })
