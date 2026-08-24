@@ -49,7 +49,13 @@ async function registerUser(req,res){
         id:user._id
     },process.env.JWT_TOKEN);
 
-    res.cookie('token',token);
+    res.cookie('token',token,{
+        httpOnly:true,
+        secure:true,
+        sameSite:'none',
+        maxAge:24*60*60*1000,
+        path:'/'
+    });
 
     res.status(201).json({
         message:'User created successfully!',
@@ -94,8 +100,8 @@ async function loginUser(req,res){
 
     res.cookie('token',token,{
         httpOnly:true,
-        secure:false,
-        sameSite:'lax',
+        secure:true,
+        sameSite:'none',
         maxAge:24*60*60*1000,
         path:'/'
     });
