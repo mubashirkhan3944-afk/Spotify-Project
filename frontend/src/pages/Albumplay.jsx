@@ -349,7 +349,7 @@ const PlayAlbum = () => {
 
                     <button
                       onClick={() => setIsLooping(!isLooping)}
-                      className={`p-2.5 rounded-full transition-colors absolute right-8 ${
+                      className={`p-2.5 rounded-full transition-colors absolute right-2 ${
                         isLooping
                           ? 'text-[#1DB954] bg-[#1DB954]/10'
                           : 'text-[#b3b3b3] hover:text-white hover:bg-[#282828]'

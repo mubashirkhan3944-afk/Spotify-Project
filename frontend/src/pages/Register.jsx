@@ -24,7 +24,7 @@ const Register = () => {
     username: '',
     email: '',
     password: '',
-    role: '',
+    role: 'USER',
     caption: '',
     image:''
   })

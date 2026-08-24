@@ -102,7 +102,7 @@ const CreatePlaylist = () => {
     setIsSubmitting(true)
     try {
       const res = await axios.post(
-        'http://localhost:3000/api/playlist/create-playlist',
+        'https://spotify-project-7nhp.onrender.com/api/playlist/create-playlist',
         {
           title: title.trim(),
           musics: selectedMusicIds,
