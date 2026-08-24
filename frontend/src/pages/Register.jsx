@@ -72,11 +72,25 @@ const Register = () => {
       !formData.name.trim() ||
       !formData.username.trim() ||
       !formData.email.trim() ||
-      !formData.password
+      !formData.password 
     ) {
       setErrorMessage('Please fill in all required fields.')
       return
     }
+    if(formData.name.length !== 6){
+      setErrorMessage('Name must be 6 characters long.')
+      return
+    }
+    if(formData.username.length <= 7){
+      setErrorMessage('Username must be at least 8 characters long.')
+      return
+    }
+    if(formData.password.length <= 7){
+      setErrorMessage('Password must be atleast of length 8')
+      return
+    }
+
+    
 
 
     setIsLoading(true)
@@ -91,6 +105,7 @@ const Register = () => {
     })
     .catch((err)=>{
       setIsLoading(false)
+      alert('Error Creating User! Please try again.')
       setErrorMessage(err.response.data.message);
     })
 
