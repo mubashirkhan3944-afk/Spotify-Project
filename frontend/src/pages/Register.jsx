@@ -77,12 +77,12 @@ const Register = () => {
       setErrorMessage('Please fill in all required fields.')
       return
     }
-    if(formData.name.length !== 6){
-      setErrorMessage('Name must be 6 characters long.')
+    if(formData.name.length <= 5){
+      setErrorMessage('Full Name must be atleast 6 characters long.')
       return
     }
     if(formData.username.length <= 7){
-      setErrorMessage('Username must be at least 8 characters long.')
+      setErrorMessage('Username must be atleast 8 characters long.')
       return
     }
     if(formData.password.length <= 7){
