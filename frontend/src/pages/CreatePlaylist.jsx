@@ -16,7 +16,7 @@ import {
   ListPlus,
 } from 'lucide-react'
 import axios from 'axios'
-import Musicpic from '../assets/music.jpg'
+import Musicpic from '../assets/music.jfif'
 
 const CreatePlaylist = () => {
   const navigate = useNavigate()
@@ -141,7 +141,7 @@ const CreatePlaylist = () => {
             <Music2 className="w-5 h-5 text-black" strokeWidth={2.5} />
           </div>
           <span className="text-xl font-bold tracking-tight text-white group-hover:text-[#1DB954] transition-colors">
-            Spotify<span className="text-[#1DB954]">.</span>
+            Stopify<span className="text-[#1DB954]">.</span>
           </span>
         </Link>
 
@@ -164,7 +164,7 @@ const CreatePlaylist = () => {
         <section className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#1e3a2b] via-[#162a1f] to-[#181818] p-6 sm:p-8 border border-[#282828] shadow-2xl">
           <div>
             <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-[#1DB954] bg-[#1DB954]/10 px-3 py-1 rounded-full border border-[#1DB954]/30 mb-3">
-              <ListPlus className="w-3.5 h-3.5" /> Spotify Library
+              <ListPlus className="w-3.5 h-3.5" /> Stopify Library
             </span>
             <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-white mb-2">
               Create Custom Playlist
@@ -242,7 +242,7 @@ const CreatePlaylist = () => {
                     <Music className="w-4 h-4 text-[#1DB954]" /> Select Tracks <span className="text-[#1DB954]">*</span>
                   </h2>
                   <p className="text-xs text-[#888] mt-0.5">
-                    Browse and select tracks from Spotify catalog ({allMusics.length} total)
+                    Browse and select tracks from Stopify catalog ({allMusics.length} total)
                   </p>
                 </div>
 

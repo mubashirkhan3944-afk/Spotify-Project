@@ -42,7 +42,7 @@ const Logout = () => {
             <Music2 className="w-5 h-5 text-black" strokeWidth={2.5} />
           </div>
           <span className="text-xl font-bold tracking-tight text-white group-hover:text-[#1DB954] transition-colors">
-            Spotify<span className="text-[#1DB954]">.</span>
+            Stopify<span className="text-[#1DB954]">.</span>
           </span>
         </Link>
       </header>
@@ -57,7 +57,7 @@ const Logout = () => {
 
           {/* Heading & Subtitle */}
           <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-3">
-            Log out of Spotify?
+            Log out of Stopify?
           </h1>
           <p className="text-[#b3b3b3] text-sm leading-relaxed mb-8">
             Are you sure you want to log out? You will need to log back in to access your playlists, saved tracks, and account settings.
