@@ -17,7 +17,7 @@ import {
 } from 'lucide-react'
 import axios from 'axios'
 import Userpic from '../assets/user.jpg'
-import Musicpic from '../assets/music.jpg'
+import Musicpic from '../assets/music.jfif'
 import Albumpic from '../assets/album.jpg'
 import Loading from '../components/Loading'
 
@@ -95,7 +95,7 @@ const UserProfile = () => {
             <Music2 className="w-5 h-5 text-black" strokeWidth={2.5} />
           </div>
           <span className="text-xl font-bold tracking-tight text-white group-hover:text-[#1DB954] transition-colors">
-            Spotify<span className="text-[#1DB954]">.</span>
+            Stopify<span className="text-[#1DB954]">.</span>
           </span>
         </Link>
 

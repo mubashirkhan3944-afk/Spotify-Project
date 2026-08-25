@@ -10,7 +10,7 @@ import {
 } from 'lucide-react'
 import axios from 'axios'
 import Albumpic from '../assets/album.jpg'
-import Musicpic from '../assets/music.jpg'
+import Musicpic from '../assets/music.jfif'
 import Userpic from '../assets/user.jpg'
 import Loading from '../components/Loading'
 

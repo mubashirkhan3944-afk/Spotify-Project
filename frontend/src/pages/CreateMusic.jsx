@@ -219,7 +219,7 @@ const CreateMusic = () => {
             <Music2 className="w-5 h-5 text-black" strokeWidth={2.5} />
           </div>
           <span className="text-xl font-bold tracking-tight text-white group-hover:text-[#1DB954] transition-colors">
-            Spotify<span className="text-[#1DB954]">.</span>
+            Stopify<span className="text-[#1DB954]">.</span>
           </span>
         </Link>
 
@@ -655,7 +655,7 @@ const CreateMusic = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#1DB954] font-bold">•</span>
-                  <span>Adding accurate genre tags helps Spotify algorithm recommend your track to fans.</span>
+                  <span>Adding accurate genre tags helps Stopify algorithm recommend your track to fans.</span>
                 </li>
               </ul>
             </div>
