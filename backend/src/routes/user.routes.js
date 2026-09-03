@@ -7,7 +7,7 @@ const authMiddleware = require('../middleware/auth.middleware');
 
 
 router.get('/',authMiddleware.checkUser,userController.getUser);
-router.get('/user/:id',authMiddleware.checkUser,userController.getUserData);
+router.get('/user/:id',userController.getUserData);
 router.get('/artist',userController.getArtists)
 
 
